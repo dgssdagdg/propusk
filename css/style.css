@@ -396,6 +396,7 @@ body {
   z-index: 2;
   overflow: hidden;
   display: none;
+  cursor: pointer;
 }
 
 .menu-btn span {
