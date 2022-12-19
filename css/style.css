@@ -2469,7 +2469,7 @@ body {
 
 .check-inputs {
   position: relative;
-  min-width: 205px;
+  max-width: 209px;
 }
 .check-inputs::after {
   top: 22px;
