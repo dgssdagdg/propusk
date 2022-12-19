@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top-color">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="Логотип">
+                            <div class="header-logo-texts">
+                                <div class="header-logo-title">mos-propusk-24.ru</div>
+                                <div class="header-logo-text">Официальное оформление пропусков на МКАД, ТТК, СК в г.Москва</div>
+                            </div>
+                        </a>
+                        <div class="header-top-navigation">
+                            <div class="header-buttons">
+                                <a href="#" class="header-buttons-btn">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_81_2462)">
+                                        <path d="M20.5989 2.87804C20.3556 2.58705 19.9905 2.42676 19.5707 2.42676C19.3442 2.42676 19.1042 2.47296 18.8575 2.56402L1.98304 8.79314C1.08582 9.12442 0.96506 9.62307 0.972924 9.89082C0.980749 10.1572 1.12911 10.6448 2.03221 10.9262L5.61085 12.2039L7.4969 16.4102C7.68649 16.9919 8.08264 17.4 8.58826 17.5324C8.70482 17.563 8.82383 17.578 8.94369 17.578C9.35433 17.578 9.77477 17.4018 10.1379 17.0695L11.7004 15.6392L15.5131 18.196C15.8564 18.4432 16.23 18.5737 16.5943 18.5737C17.3338 18.5737 17.9235 18.0463 18.0968 17.2301L20.8566 4.22559C20.97 3.69113 20.8785 3.21258 20.5989 2.87804ZM6.79686 12.0065L11.6667 9.46218L8.27273 12.4953C8.15189 12.6033 8.08458 12.7555 8.08439 12.914C8.08416 12.9198 8.08342 12.9255 8.08338 12.9314L8.07166 14.8495L6.79686 12.0065ZM9.33825 16.2402C9.30224 16.2731 9.26615 16.3021 9.23049 16.3273L9.24478 13.9924L10.716 14.979L9.33825 16.2402ZM19.7129 3.99517L16.9531 16.9997C16.9253 17.1308 16.8346 17.4358 16.5943 17.4358C16.482 17.4358 16.3428 17.3795 16.2023 17.2773C16.1962 17.2729 16.1901 17.2686 16.1839 17.2645L11.9807 14.4458C11.9801 14.4454 11.9795 14.445 11.979 14.4446L9.60254 12.851L15.8802 7.24062C16.0971 7.04677 16.132 6.72592 15.9616 6.49205C15.7913 6.25818 15.4689 6.18445 15.2095 6.31997L6.00081 11.1313L2.42209 9.85357C2.41949 9.85262 2.41688 9.85171 2.41423 9.8508L19.2713 3.62809C19.4133 3.57563 19.5125 3.56464 19.5707 3.56464C19.5995 3.56464 19.6692 3.56775 19.6932 3.59657C19.7241 3.63348 19.763 3.75898 19.7129 3.99517Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_81_2462">
+                                        <rect width="19.9314" height="19.4191" fill="white" transform="translate(0.97258 0.790527)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header-buttons-btn">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_81_2454)">
+                                        <path d="M15.4895 3.29923C13.8043 1.66354 11.5626 0.762164 9.17675 0.76123C6.79623 0.76123 4.55093 1.66181 2.85471 3.29709C1.15548 4.93517 0.218819 7.11208 0.216629 9.41887V9.42153V9.42313C0.216903 10.8193 0.5934 12.2278 1.30807 13.5135L0.241127 18.2384L5.14654 17.1513C6.38894 17.7613 7.77518 18.0829 9.17332 18.0834H9.17688C11.557 18.0834 13.8023 17.1827 15.4988 15.5473C17.1995 13.9079 18.1366 11.7338 18.1377 9.42553C18.1384 7.13355 17.198 4.95784 15.4895 3.29923ZM9.17675 16.7194H9.1736C7.9182 16.7188 6.67429 16.4118 5.57655 15.8311L5.34457 15.7084L2.08269 16.4312L2.79121 13.294L2.65462 13.0645C1.97553 11.9235 1.61669 10.664 1.61669 9.42167C1.61929 5.40053 5.01037 2.1253 9.17647 2.1253C11.1891 2.1261 13.0802 2.88627 14.5014 4.26554C15.944 5.66614 16.7382 7.4985 16.7375 9.42513C16.7358 13.4472 13.3441 16.7194 9.17675 16.7194Z" fill="white"/>
+                                        <path d="M6.73861 5.60352H6.34583C6.2091 5.60352 5.98712 5.65338 5.79935 5.85246C5.61144 6.05167 5.08194 6.53316 5.08194 7.51241C5.08194 8.49166 5.81646 9.43784 5.91883 9.57078C6.02134 9.70359 7.33668 11.7773 9.41994 12.5751C11.1513 13.238 11.5037 13.1062 11.8794 13.073C12.2552 13.0399 13.0921 12.5916 13.2629 12.1269C13.4337 11.6622 13.4337 11.2638 13.3825 11.1806C13.3312 11.0977 13.1945 11.0479 12.9896 10.9485C12.7846 10.8488 11.7801 10.3592 11.5922 10.2927C11.4042 10.2264 11.2677 10.1932 11.1309 10.3926C10.9942 10.5915 10.5917 11.0518 10.4721 11.1846C10.3526 11.3175 10.233 11.3342 10.028 11.2346C9.82299 11.1347 9.16962 10.9209 8.38666 10.243C7.77723 9.71532 7.35434 9.04249 7.23472 8.84328C7.11524 8.6442 7.22199 8.53646 7.32477 8.43713C7.41688 8.34805 7.54128 8.22618 7.64379 8.11004C7.74616 7.99377 7.77531 7.91083 7.84374 7.77803C7.91203 7.64522 7.87782 7.52895 7.82663 7.42947C7.77531 7.32987 7.38198 6.34569 7.19969 5.95207H7.19982C7.04627 5.62058 6.88464 5.60938 6.73861 5.60352Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_81_2454">
+                                        <rect width="17.9383" height="17.4771" fill="white" transform="translate(0.216629 0.76123)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </a>
+                                <button type="button" class="header-buttons-btn">Перезвоните мне</button>
+                            </div>
+                            <div class="header-tells">
+                                <div class="header-tells-title">Круглосуточный телефон</div>
+                                <a href="tel:84951288689" class="header-tells-tell">8(495)128-86-89</a>
+                                <div class="header-tells-text">info@mos-propusk-24.ru</div>
+                            </div>
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-end-color">
+                <div class="container">
+                    <div class="header-end">
+                        <nav class="header-nav">
+                            <ul class="header-list">
+                                <li><a href="#" class="header-link">О нас</a></li>
+                                <li>
+                                    <a href="#" class="header-link">Оформить пропуск</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-link">РНИС</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-link">Услуги</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="header-link">Проверка пропуска</a></li>
+                                <li><a href="#" class="header-link">Отзывы</a></li>
+                                <li><a href="#" class="header-link">Информация</a></li>
+                                <li><a href="#" class="header-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-come">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_95_2595)">
+                                <path d="M7.5 0C5.31917 0 3.54492 1.77425 3.54492 3.95508C3.54492 6.13591 5.31917 7.91016 7.5 7.91016C9.68083 7.91016 11.4551 6.13591 11.4551 3.95508C11.4551 1.77425 9.68083 0 7.5 0Z" fill="#2C3036"/>
+                                <path d="M12.4209 10.494C11.3381 9.39454 9.90261 8.78906 8.37891 8.78906H6.62109C5.09742 8.78906 3.66193 9.39454 2.57912 10.494C1.50161 11.5881 0.908203 13.0322 0.908203 14.5605C0.908203 14.8032 1.10496 15 1.34766 15H13.6523C13.895 15 14.0918 14.8032 14.0918 14.5605C14.0918 13.0322 13.4984 11.5881 12.4209 10.494Z" fill="#2C3036"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_95_2595">
+                                <rect width="15" height="15" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            Войти
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li><a href="#" class="header-link">О нас</a></li>
+                    <li>
+                        <a href="#" class="header-link">Оформить пропуск</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="header-link">РНИС</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="header-link">Услуги</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="header-link">Проверка пропуска</a></li>
+                    <li><a href="#" class="header-link">Отзывы</a></li>
+                    <li><a href="#" class="header-link">Информация</a></li>
+                    <li><a href="#" class="header-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="menu-come">Войти в личный кабинет</button>
+            <div class="header-tells">
+                <div class="header-tells-title">Круглосуточный телефон</div>
+                <a href="tel:84951288689" class="header-tells-tell">8(495)128-86-89</a>
+                <div class="header-tells-text">info@mos-propusk-24.ru</div>
+            </div>
+            <div class="header-buttons">
+                <button type="button" class="header-buttons-btn">Перезвоните мне</button>
+                <a href="#" class="header-buttons-btn">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_81_2462)">
+                        <path d="M20.5989 2.87804C20.3556 2.58705 19.9905 2.42676 19.5707 2.42676C19.3442 2.42676 19.1042 2.47296 18.8575 2.56402L1.98304 8.79314C1.08582 9.12442 0.96506 9.62307 0.972924 9.89082C0.980749 10.1572 1.12911 10.6448 2.03221 10.9262L5.61085 12.2039L7.4969 16.4102C7.68649 16.9919 8.08264 17.4 8.58826 17.5324C8.70482 17.563 8.82383 17.578 8.94369 17.578C9.35433 17.578 9.77477 17.4018 10.1379 17.0695L11.7004 15.6392L15.5131 18.196C15.8564 18.4432 16.23 18.5737 16.5943 18.5737C17.3338 18.5737 17.9235 18.0463 18.0968 17.2301L20.8566 4.22559C20.97 3.69113 20.8785 3.21258 20.5989 2.87804ZM6.79686 12.0065L11.6667 9.46218L8.27273 12.4953C8.15189 12.6033 8.08458 12.7555 8.08439 12.914C8.08416 12.9198 8.08342 12.9255 8.08338 12.9314L8.07166 14.8495L6.79686 12.0065ZM9.33825 16.2402C9.30224 16.2731 9.26615 16.3021 9.23049 16.3273L9.24478 13.9924L10.716 14.979L9.33825 16.2402ZM19.7129 3.99517L16.9531 16.9997C16.9253 17.1308 16.8346 17.4358 16.5943 17.4358C16.482 17.4358 16.3428 17.3795 16.2023 17.2773C16.1962 17.2729 16.1901 17.2686 16.1839 17.2645L11.9807 14.4458C11.9801 14.4454 11.9795 14.445 11.979 14.4446L9.60254 12.851L15.8802 7.24062C16.0971 7.04677 16.132 6.72592 15.9616 6.49205C15.7913 6.25818 15.4689 6.18445 15.2095 6.31997L6.00081 11.1313L2.42209 9.85357C2.41949 9.85262 2.41688 9.85171 2.41423 9.8508L19.2713 3.62809C19.4133 3.57563 19.5125 3.56464 19.5707 3.56464C19.5995 3.56464 19.6692 3.56775 19.6932 3.59657C19.7241 3.63348 19.763 3.75898 19.7129 3.99517Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_81_2462">
+                        <rect width="19.9314" height="19.4191" fill="white" transform="translate(0.97258 0.790527)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="header-buttons-btn">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_81_2454)">
+                        <path d="M15.4895 3.29923C13.8043 1.66354 11.5626 0.762164 9.17675 0.76123C6.79623 0.76123 4.55093 1.66181 2.85471 3.29709C1.15548 4.93517 0.218819 7.11208 0.216629 9.41887V9.42153V9.42313C0.216903 10.8193 0.5934 12.2278 1.30807 13.5135L0.241127 18.2384L5.14654 17.1513C6.38894 17.7613 7.77518 18.0829 9.17332 18.0834H9.17688C11.557 18.0834 13.8023 17.1827 15.4988 15.5473C17.1995 13.9079 18.1366 11.7338 18.1377 9.42553C18.1384 7.13355 17.198 4.95784 15.4895 3.29923ZM9.17675 16.7194H9.1736C7.9182 16.7188 6.67429 16.4118 5.57655 15.8311L5.34457 15.7084L2.08269 16.4312L2.79121 13.294L2.65462 13.0645C1.97553 11.9235 1.61669 10.664 1.61669 9.42167C1.61929 5.40053 5.01037 2.1253 9.17647 2.1253C11.1891 2.1261 13.0802 2.88627 14.5014 4.26554C15.944 5.66614 16.7382 7.4985 16.7375 9.42513C16.7358 13.4472 13.3441 16.7194 9.17675 16.7194Z" fill="white"/>
+                        <path d="M6.73861 5.60352H6.34583C6.2091 5.60352 5.98712 5.65338 5.79935 5.85246C5.61144 6.05167 5.08194 6.53316 5.08194 7.51241C5.08194 8.49166 5.81646 9.43784 5.91883 9.57078C6.02134 9.70359 7.33668 11.7773 9.41994 12.5751C11.1513 13.238 11.5037 13.1062 11.8794 13.073C12.2552 13.0399 13.0921 12.5916 13.2629 12.1269C13.4337 11.6622 13.4337 11.2638 13.3825 11.1806C13.3312 11.0977 13.1945 11.0479 12.9896 10.9485C12.7846 10.8488 11.7801 10.3592 11.5922 10.2927C11.4042 10.2264 11.2677 10.1932 11.1309 10.3926C10.9942 10.5915 10.5917 11.0518 10.4721 11.1846C10.3526 11.3175 10.233 11.3342 10.028 11.2346C9.82299 11.1347 9.16962 10.9209 8.38666 10.243C7.77723 9.71532 7.35434 9.04249 7.23472 8.84328C7.11524 8.6442 7.22199 8.53646 7.32477 8.43713C7.41688 8.34805 7.54128 8.22618 7.64379 8.11004C7.74616 7.99377 7.77531 7.91083 7.84374 7.77803C7.91203 7.64522 7.87782 7.52895 7.82663 7.42947C7.77531 7.32987 7.38198 6.34569 7.19969 5.95207H7.19982C7.04627 5.62058 6.88464 5.60938 6.73861 5.60352Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_81_2454">
+                        <rect width="17.9383" height="17.4771" fill="white" transform="translate(0.216629 0.76123)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+            </div>
+        </div>
+        <main class="main">
+            <section class="intro">
+                <div class="container">
+                    <div class="intro-row">
+                        <div class="intro-content">
+                            <h1 class="intro-title">Пропуска для передвижения по МКАД, ТТК и СК</h1>
+                            <div class="intro-text">Пропуск МКАД, ТТК, СК - день или ночь всего за <span>11 990! </span>Наличный и безналичный расчет с НДС 20% и без! Гарантия получения 100%! Без отказов! Официально по договору! Оплата по факту получения!</div>
+                            <a href="#" class="intro-btn _btn-red">Оставить заявку</a>
+                        </div>
+                        <div class="intro-items">
+                            <div class="intro-item">
+                                <div class="intro-item-title">с 2008 года</div>
+                                <div class="intro-item-text">на рынке транспортных услуг</div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-item-title">350 тысяч</div>
+                                <div class="intro-item-text">выданных пропусков</div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-item-title">6000</div>
+                                <div class="intro-item-text">клиентов</div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-item-title">110 млн.</div>
+                                <div class="intro-item-text">оборот компании</div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-item-title">30</div>
+                                <div class="intro-item-text">специалистов</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-crug"></div>
+                <img src="img/fon.jpg" alt="" class="intro-fon">
+            </section>
+            <section class="absence">
+                <div class="container">
+                    <div class="absence-row">
+                        <div class="absence-bodu">
+                            <h2 class="absence-title absence-title-none _title">Чем грозит <span>отсутствие пропуска?</span></h2>
+                            <div class="absence-img">
+                                <img src="img/absence/img.png" alt="Картина девушки">
+                            </div>
+                            <div class="absence-content">
+                                <h2 class="absence-title _title">Чем грозит <span>отсутствие пропуска?</span></h2>
+                                <div class="absence-text _text">
+                                    <p>Учитывая существующую экологическую ситуацию в столице и другие важные факторы (например, транспортную логистику), власти создали закон от 22 августа 2011 г. № 379-ПП «Об ограничении движения грузового автотранспорта», по которому свободный въезд в Москву для грузовых автомобилей запрещён.</p>
+                                    <p>Чтобы получить разрешение на въезд в центр Москвы для грузовика, следует оформить на транспорт специальный пропуск.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absence-items">
+                            <div class="absence-item">
+                                <div class="absence-item-text _text">На сегодняшний день количество <span>видеокамер на МКАД, ТТК и СК</span> более 70 штук</div>
+                                <img src="img/absence/item-one.png" alt="Чем грозит отсутствие пропуска?">
+                            </div>
+                            <div class="absence-item">
+                                <div class="absence-item-text _text">Каждый факт нарушения грозит <span>штрафом в 5000 рублей</span> с каждой камеры</div>
+                                <img class="absecnce-item-img" src="img/absence/item-two.png" alt="Чем грозит отсутствие пропуска?">
+                            </div>
+                            <div class="absence-item">
+                                <div class="absence-item-text _text">Даже проехав несколько км по МКАД, вы рискуете собрать <span>не менее 10 штрафов!</span></div>
+                                <img class="absecnce-item-img" src="img/absence/item-three.png" alt="Чем грозит отсутствие пропуска?">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="secrives">
+                <div class="container">
+                    <div class="secrives-row">
+                        <h2 class="secrives-title _title">Наши услуги</h2>
+                        <div class="secrives-body">
+                            <div class="secrives-sliders">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="secrives-item">
+                                            <img src="img/services/img-one.jpg" alt="МКАД пропуск на 1 год" class="secrives-img">
+                                            <div class="secrives-label">МКАД</div>
+                                            <div class="secrives-content">
+                                                <div class="secrives-content-title"><span>МКАД</span> пропуск на 1 год</div>
+                                                <div class="secrives-content-texts">
+                                                    <div class="secrives-content-text"><span>–</span> Масса - более 3.5т.</div>
+                                                    <div class="secrives-content-text"><span>–</span> От МКАД до ТТК без права заезда на ТТК</div>
+                                                    <div class="secrives-content-text"><span>–</span> Для автомобилей не ниже Евро-2</div>
+                                                </div>
+                                                <div class="secrives-content-times">
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Дневные пропуска</div>
+                                                        <div class="secrives-tims-time">07:00 до 23:00</div>
+                                                    </div>
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Ночные пропуска</div>
+                                                        <div class="secrives-tims-time">23:00 до 07:00</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <a href="#" class="secrives-content-btn _btn-red">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="secrives-item">
+                                            <img src="img/services/img-two.jpg" alt="ТТК пропуск на 1 год" class="secrives-img">
+                                            <div class="secrives-label">ТТК</div>
+                                            <div class="secrives-content">
+                                                <div class="secrives-content-title"><span>ТТК</span> пропуск на 1 год</div>
+                                                <div class="secrives-content-texts">
+                                                    <div class="secrives-content-text"><span>–</span> Грузоподъемностью более 1т.</div>
+                                                    <div class="secrives-content-text"><span>–</span> От МКАД до СК без права заезда на СК</div>
+                                                    <div class="secrives-content-text"><span>–</span> Для автомобилей не ниже Евро-3</div>
+                                                </div>
+                                                <div class="secrives-content-times">
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Дневные пропуска</div>
+                                                        <div class="secrives-tims-time">07:00 до 23:00</div>
+                                                    </div>
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Ночные пропуска</div>
+                                                        <div class="secrives-tims-time">23:00 до 07:00</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <a href="#" class="secrives-content-btn _btn-red">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="secrives-item">
+                                            <img src="img/services/img-three.jpg" alt="СК пропуск на 1 год" class="secrives-img">
+                                            <div class="secrives-label">СК</div>
+                                            <div class="secrives-content">
+                                                <div class="secrives-content-title"><span>СК</span> пропуск на 1 год</div>
+                                                <div class="secrives-content-texts">
+                                                    <div class="secrives-content-text"><span>–</span> Грузоподъемностью более 1т.</div>
+                                                    <div class="secrives-content-text"><span>–</span> Передвижение по городу Москва без ограничений</div>
+                                                    <div class="secrives-content-text"><span>–</span> Для автомобилей не ниже Евро-3</div>
+                                                </div>
+                                                <div class="secrives-content-times">
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Дневные пропуска</div>
+                                                        <div class="secrives-tims-time">07:00 до 23:00</div>
+                                                    </div>
+                                                    <div class="secrives-content-tims">
+                                                        <div class="secrives-tims-title">Ночные пропуска</div>
+                                                        <div class="secrives-tims-time">23:00 до 07:00</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <a href="#" class="secrives-content-btn _btn-red">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="secrives-pagination secrives-pagination-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zone">
+                <div class="container">
+                    <div class="zone-row">
+                        <div class="zone-top">
+                            <h2 class="zone-title _title"><span>Не знаете в какую зону</span> выбрать пропуск? МКАД, ТТК, СК?</h2>
+                            <div class="zone-text">Мы бесплатно проконсультируем вас! Оставьте свой номер телефона!</div>
+                        </div>
+                        <div class="zone-img">
+                            <img src="img/gerl.png" alt="Не знаете в какую зону выбрать пропуск? МКАД, ТТК, СК?">
+                        </div>
+                        <div class="zone-content">
+                            <h2 class="zone-none zone-title _title"><span>Не знаете в какую зону</span> выбрать пропуск? МКАД, ТТК, СК?</h2>
+                            <div class="zone-none zone-text">Мы бесплатно проконсультируем вас! Оставьте свой номер телефона!</div>
+                            <div class="zone-block">
+                                <div class="zone-block-title">Свяжемся с вами в течении <span>30 минут</span></div>
+                                <div class="zone-block-inputs">
+                                    <input placeholder="Ваше имя" type="text" class="zone-block-input _input">
+                                    <input placeholder="Номер телефона" type="tel" class="zone-block-input _input">
+                                </div>
+                                <div class="zone-block-buttons">
+                                    <button type="submit" class="zone-block-btn _btn-red">Отправить</button>
+                                    <div class="zone-block-text">
+                                        Нажимая на кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="stages">
+                <div class="container">
+                    <div class="stages-row">
+                        <h2 class="stages-title _title"><span>Этапы оформления</span> пропуска</h2>
+                        <div class="stages-items">
+                            <div class="stages-item">
+                                <div class="stages-item-img">
+                                    <img src="img/stages/img-one.png" alt="Оставляете заявку">
+                                </div>
+                                <div class="stages-item-text">1. Оставляете <span>заявку</span></div>
+                            </div>
+                            <div class="stages-item">
+                                <div class="stages-item-img">
+                                    <img src="img/stages/img-three.png" alt="Присылаете нам документы">
+                                </div>
+                                <div class="stages-item-text">2. Присылаете нам <span>документы</span></div>
+                            </div>
+                            <div class="stages-item">
+                                <div class="stages-item-img">
+                                    <img src="img/stages/img-four.png" alt="Получаете временный пропуск">
+                                </div>
+                                <div class="stages-item-text">3. Получаете <span>временный пропуск</span></div>
+                            </div>
+                            <div class="stages-item">
+                                <div class="stages-item-img">
+                                    <img src="img/stages/img-five.png" alt="Получаете годовой пропуск">
+                                </div>
+                                <div class="stages-item-text">4. Получаете <span>годовой пропуск</span></div>
+                            </div>
+                            <div class="stages-item">
+                                <div class="stages-item-img">
+                                    <img src="img/stages/img-two.png" alt="Оплачиваете пропуск">
+                                </div>
+                                <div class="stages-item-text">5. <span>Оплачиваете</span> пропуск</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="price">
+                <div class="container">
+                    <div class="price-row">
+                        <h2 class="price-title _title">Стоимость услуг</h2>
+                        <div class="price-items">
+                            <div class="price-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="price-item">
+                                            <div class="price-item-title p-title">Пропуск МКАД</div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Временный пропуск 10 дней: <span>2990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 2 часа</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>11 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>19 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <a href="#" class="price-item-box-btn _btn-red">Заказать пропуск</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="price-item">
+                                            <div class="price-item-title p-title">Пропуск ТТК</div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Временный пропуск 10 дней: <span>2990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 2 часа</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>11 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>19 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <a href="#" class="price-item-box-btn _btn-red">Заказать пропуск</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="price-item">
+                                            <div class="price-item-title p-title">Пропуск СК</div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Временный пропуск 10 дней: <span>2990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 2 часа</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>11 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <div class="price-item-box">
+                                                <div class="price-item-box-title">Пропуск 1 год (день \ ночь): <span>19 990₽</span></div>
+                                                <div class="price-item-box-text">Срок оформления: 10 дней</div>
+                                            </div>
+                                            <a href="#" class="price-item-box-btn _btn-red">Заказать пропуск</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-pagination secrives-pagination-color"></div>
+                        <div class="price-body">
+                            <div class="price-block">
+                                <div class="price-block-img"><img src="img/price-img.png" alt="Диагностическая карта"></div>
+                                <div class="price-block-box">
+                                    <div class="price-block-box-title p-title">Диагностическая карта</div>
+                                    <div class="price-block-box-sub-tilte">Категория B: <span>4990₽</span></div>
+                                    <div class="price-block-box-sub-tilte">Категория С: <span>6990₽</span></div>
+                                    <a href="#" class="price-block-box-btn _btn-red">Заказать диагностическую карту</a>
+                                </div>
+                                <a href="#" class="price-none price-block-box-btn _btn-red">Заказать диагностическую карту</a>
+                            </div>
+                            <form action="#" class="price-form">
+                                <div class="price-form-title">Поможем с выбором</div>
+                                <input placeholder="Номер телефона" type="tel" class="price-form-input _input">
+                                <button type="submit" class="price-form-btn">Консультация</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bonuses">
+                <div class="container">
+                    <div class="bonuses-row">
+                        <h2 class="bonuses-title _title">Бонусы для Вас</h2>
+                        <div class="bonuses-item">
+                            <div class="bonuses-img"><img class="bonuses-item-one" src="img/bonuses/img.png" alt="Временный пропуск"> <img class="bonuses-item-two" src="img/bonuses/img-mini.png" alt="Временный пропуск"></div>
+                            <div class="bonuses-texts">
+                                <div class="bonuses-texts-title">Временный пропуск</div>
+                                <div class="bonuses-texts-text">При оформлении годового пропуска вы получаете в подарок 2 временных пропуска по 10 дней! Бесплатное СМС оповещение о сроках действия и 100% защиту от аннулирования!</div>
+                            </div>
+                        </div>
+                        <div class="bonuses-item">
+                            <div class="bonuses-img"><img class="bonuses-item-one" src="img/bonuses/img-two.png" alt="Выезд специалиста"> <img class="bonuses-item-two" src="img/bonuses/img-two-mini.png" alt="Выезд специалиста"></div>
+                            <div class="bonuses-texts">
+                                <div class="bonuses-texts-title">Выезд специалиста</div>
+                                <div class="bonuses-texts-text">Боитесь передавать ЭЦП в чужие руки? Мы бесплатно приедем и подадим автомобили с вашего личного кабинета! Нет ЭЦП? Не проблема мы сделаем все сами!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages-row">
+                        <h2 class="advantages-title _title">Наши преимущества</h2>
+                        <div class="advantages-items">
+                            <div class="advantages-item">
+                                <div class="advantages-item-img"><img src="img/advantages/img-one.png" alt="20 дней бесплатно"></div>
+                                <div class="advantages-item-title">20 дней бесплатно</div>
+                                <div class="advantages-item-text">2 бесплатных временных пропуска, на время оформления годового пропуска</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item-img"><img src="img/advantages/img-two.png" alt="100% гарантия"></div>
+                                <div class="advantages-item-title">100% гарантия</div>
+                                <div class="advantages-item-text">Мы гарантируем, что ваш пропуск не будет анулирован в течении его срока действия</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item-img"><img src="img/advantages/img-three.png" alt="Оформление за 2 часа"></div>
+                                <div class="advantages-item-title">Оформление за 2 часа</div>
+                                <div class="advantages-item-text">Всего через 2 часа вы отправляетесь в путь и зарабатываете деньги, без лишней головной боли</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item-img"><img src="img/advantages/img-four.png" alt="Без предоплаты"></div>
+                                <div class="advantages-item-title">Без предоплаты</div>
+                                <div class="advantages-item-text">Мы не берём предоплату с клиентов, пока они не получат основной годовой пропуск</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about-row">
+                        <h2 class="about-title _title">О компании</h2>
+                        <div class="about-text">
+                            <p>Наша команда предлагает возможность получить пропуск по МКАД, ТТК и СК на законной основе по выгодной цене.</p>
+                            <p>Особенность данной услуги - большая экономия времени, позволяющая практически сразу заняться работой, т.к. через 2 часа вы имеете официальный временный пропуск на 10 дней и через 10 рабочих дней годовой пропуск на 12 месяцев.</p>
+                        </div>
+                        <div class="about-items">
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-one.png" alt="С 2008 года на рынке транспортных услуг"></div>
+                                <div class="about-item-title"><span>С 2008 года</span> на рынке транспортных услуг</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-two.png" alt="350 тысяч выданных пропусков"></div>
+                                <div class="about-item-title"><span>350 тысяч</span> выданных пропусков</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-three.png" alt="6000 благодарных клиентов"></div>
+                                <div class="about-item-title"><span>6000</span> благодарных клиентов</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-four.png" alt="110 миллионов рублей оборот компании"></div>
+                                <div class="about-item-title"><span>110 миллионов рублей</span> оборот компании</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-five.png" alt="30 специалистоввысшей категории"></div>
+                                <div class="about-item-title"><span>30 специалистов</span> высшей категории</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-six.png" alt="Квалификационный аттестат аудитора"></div>
+                                <div class="about-item-title"><span>Квалификационный</span> аттестат аудитора</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-seven.png" alt="ISO 9001:2015 система менеджмента качества"></div>
+                                <div class="about-item-title"><span>ISO 9001:2015</span> система менеджмента качества</div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item-img"><img src="img/about/img-eight.png" alt="Чистая арбитражная история"></div>
+                                <div class="about-item-title"><span>Чистая</span> арбитражная история</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients">
+                <div class="container">
+                    <div class="clients-row">
+                        <h2 class="clients-title _title">Наши клиенты</h2>                      
+                        <div class="clients-body">
+                            <div class="clients-sliders">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-one.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-two.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-three.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-four.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-five.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-six.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-seven.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-eight.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-ten.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-eleven.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-three.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-five.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-six.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-seven.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-one.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients-item">
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-ten.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-four.png" alt="">
+                                            </div>
+                                            <div class="clients-img">
+                                                <img src="img/clients/one-three.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="receive">
+                <div class="container">
+                    <div class="receive-row">
+                        <div class="receive-img">
+                            <img src="img/receive/receive-img.jpg" alt="Хотите получить список документов по СМС?">
+                            <div class="receive-img-content">
+                                <h2 class="receive-title _title"><span>Хотите получить список документов по</span> СМС?</h2>
+                                <div class="receive-text">Оставьте заявку и мы перезвоним вам за <span>30 секунд!</span></div>
+                                <div class="receive-sub-text">Работаем без предоплаты!</div>
+                            </div>
+                        </div>
+                        <form action="#" class="receive-content">
+                            <h2 class="receive-title _title"><span>Хотите получить список документов по</span> СМС?</h2>
+                            <div class="receive-text">Оставьте заявку и мы перезвоним вам за <span>30 секунд!</span></div>
+                            <div class="receive-sub-text">Работаем без предоплаты!</div>
+                            <div class="receive-inputs">
+                                <input placeholder="Ваше имя" type="text" class="receive-input _input">
+                                <input placeholder="Номер телефона" type="tel" class="receive-input _input">
+                            </div>
+                            <div class="receive-buttons">
+                                <button type="submit" class="receive-buttons-btn _btn-red">Получить список документов</button>
+                                <button type="submit" class="receive-none receive-buttons-btn _btn-red">Отправить</button>
+                                <div class="receive-buttons-text">Нажимая на кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <img src="img/receive/receive-fon.jpg" alt="Задний фон" class="receive-fon">
+            </section>
+            <section class="free">
+                <div class="container">
+                    <div class="free-row">
+                        <h2 class="free-none free-title _title">Наши преимущества</h2>
+                        <h2 class="free-title _title">Бесплатный круглосуточный контроль за пропуском</h2>
+                        <div class="free-text">Внимание! Специально разработанная и интегрированная с базой департамента транспорта система контроля выхода временных, годовых пропусков, а так же аннуляции для всех наших клиентов в подарок при заказе любого пропуска МКАД, ТТК, СК!</div>
+                        <div class="free-body">
+                            <div class="free-items">
+                                <div class="free-item-one">
+                                    <div class="free-item-img"><img src="img/free/img-one.png" alt="Круглосуточный контроль"></div>
+                                    <div class="free-item-texts">
+                                        <div class="free-item-title">Круглосуточный контроль</div>
+                                        <div class="free-item-text">24 часа в сутки, 7 дней в неделю, 365 дней в году</div>
+                                    </div>
+                                </div>
+                                <div class="free-item-one">
+                                    <div class="free-item-img"><img src="img/free/img-two.png" alt="Оперативное реагирование"></div>
+                                    <div class="free-item-texts">
+                                        <div class="free-item-title">Оперативное реагирование</div>
+                                        <div class="free-item-text">оперативное реагирование вашего персонального менеджера в случае аннуляции</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="free-items">
+                                <div class="free-item-two">
+                                    <div class="free-item-img"><img src="img/free/img-three.png" alt="СМС уведомления"></div>
+                                    <div class="free-item-texts">
+                                        <div class="free-item-title">СМС уведомления</div>
+                                        <div class="free-item-text">моментальная интеллектуальная система СМС уведомления, временный, годовой пропуск и аннулирование</div>
+                                    </div>
+                                </div>
+                                <div class="free-item-two">
+                                    <div class="free-item-img"><img src="img/free/img-four.png" alt="Личный кабинет"></div>
+                                    <div class="free-item-texts">
+                                        <div class="free-item-title">Личный кабинет</div>
+                                        <div class="free-item-text">уникальный доступ к личному кабинету защищенному высокотехнологичным шифрованием</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="free-end">
+                            <div class="free-end-texts">
+                                <div class="free-end-title">Мобильное приложение</div>
+                                <div class="free-end-text">В приложении вы сможете добавлять автомобили и отслеживать пропуска</div>
+                            </div>
+                            <div class="free-end-links">
+                                <a href="#"><img src="img/free/gogle.png" alt="gogle"></a>
+                                <a href="#"><img src="img/free/store.png" alt="store"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="check">
+                <div class="container">
+                    <div class="check-row">
+                        <div class="check-one check-l">
+                            <h2 class="check-title">Проверьте ваш пропуск</h2>
+                            <div class="check-text">Введите государственный регистрационный знак ТС (без пробелов)</div>
+                            <form action="#" class="check-buttons">
+                                <div class="check-inputs">
+                                    <input placeholder="А000АА" type="text" class="check-input">
+                                    <input placeholder="000" type="text" class="check-input">
+                                </div>
+                                <button type="submit" class="check-btn _btn-red">Проверить</button>
+                            </form>
+                            <div class="check-sub-text">
+                                <p><span>*</span> Проверьте действие вашего пропуска в несколько кликов! Просто введите номерной знак транспортного средства и кликните по кнопке <span>«Проверить»</span>.</p>
+                                <p>На нашем сайте вы можете подать заявку и подключить опцию круглосуточного контроля пропуска. Когда срок действия разрешения подойдет к концу, или его аннулируют, мы автоматически отправим вам смс-уведомление.</p>
+                            </div>
+                        </div>
+                        <div class="check-one check-r">
+                            <h2 class="check-title">Подключите круглосуточный мониторинг</h2>
+                            <div class="check-text">Вашего пропуска абсолютно <span>бесплатно на 365 дней</span></div>
+                            <form action="#" class="check-block">
+                                <div class="check-inputs">
+                                    <input placeholder="А000АА" type="text" class="check-input">
+                                    <input placeholder="000" type="text" class="check-input">
+                                </div>
+                                <div class="check-block-inputs">
+                                    <input placeholder="Ваше имя" type="text" class="check-big-input _input">
+                                    <input placeholder="Номер телефона" type="text" class="check-big-input _input">
+                                </div>
+                                <button type="submit" class="check-btn check-none _btn-red">Контролировать пропуск</button>
+                                <button type="submit" class="check-btn _btn-red">Хочу контролировать пропуск</button>
+                            </form>
+                            <div class="check-end-text">
+                                Нажимая на кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/check/fon.jpg" alt="Задний фон" class="check-fon">
+                <img src="img/check/img.png" alt="Подключите круглосуточный мониторинг" class="check-img">
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news-row">
+                        <h2 class="news-title _title">Новости</h2>
+                        <div class="news-items">
+                            <a href="#" class="news-item">
+                                <img class="news-img" src="img/news/img-one.jpg" alt="Новости">
+                                <img src="img/news/filter.png" alt="Фильтер" class="news-filter">
+                                <div class="news-text">Минтранс прямо заинтересован в том, чтобы автоперевозчики ездили с перегрузом?</div>
+                            </a>
+                            <a href="#" class="news-item">
+                                <img class="news-img" src="img/news/img-two.jpg" alt="Новости">
+                                <img src="img/news/filter.png" alt="Фильтер" class="news-filter">
+                                <div class="news-text">Аннулирование пропусков в январе 2023 за непередачу телематических данных</div>
+                            </a>
+                            <a href="#" class="news-item">
+                                <img class="news-img" src="img/news/img-three.jpg" alt="Новости">
+                                <img src="img/news/filter.png" alt="Фильтер" class="news-filter">
+                                <div class="news-text">Шестикратное увеличение штрафа за отсутствие ОСАГО</div>
+                            </a>
+                            <a href="#" class="news-item">
+                                <img class="news-img" src="img/news/img-four.jpg" alt="Новости">
+                                <img src="img/news/filter.png" alt="Фильтер" class="news-filter">
+                                <div class="news-text">«Резонансные» изменения от Минтранса: что изменится в скоростном режиме на дорогах?</div>
+                            </a>
+                        </div>
+                        <div class="news-buttons">
+                            <a href="#" class="_btn-red">Посмотреть все новости</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="registration">
+                <div class="container">
+                    <div class="registration-row">
+                        <h2 class="registration-title _title">Оформление пропусков на МКАД, ТТК и СК в Москве</h2>
+                        <div class="registration-text">
+                            <p><span>Оформление пропуска в Москве</span> – это всегда сложный процесс, который может отнять достаточно много времени. Заявителям часто приходится сталкиваться с различными проблемами, вплоть до отказа в выдаче документа.</p>
+                            <p>Компания «MOS-PROPUSK-24» занимается оформлением пропусков уже более 9 лет – за это время мы создали и расширили большую базу клиентов, которые нам доверяют. <span>Предоставляем 100% гарантию на получение пропуска</span>, а также гарантируем, что пропуск не будет аннулирован в течение его срока действия.</p>
+                            <p>Наша компания ведет свою деятельность, согласно регламенту Департамента транспорта. Мы работаем как с физическими, так и с юридическими лицами. Работаем строго в рамках действующего законодательства в соответствии с Постановлением Правительства города Москва от 22.08.2011 №379-ПП.</p>
+                        </div>
+                        <div class="registration-sub-title">Пропуск ТТК</div>
+                        <div class="registration-text">
+                            <p>Для своих клиентов мы предлагаем различные бонусы, выгодные предложения и акции. Предоставляется <span>временный пропуск на тот период, пока мы будем заниматься оформлением основного пропуска (сроком на 10 дней).</span> Возможен выезд нашего специалиста.</p>
+                            <p>Мы специализируемся на выдаче пропусков в Москве для грузовых автомобилей в следующих зонах:</p>
+                            <div class="registration-p">
+                                <p><span>МКАД</span> – позволяет выезжать на территорию МКАД, перемещаясь в его пределах без права въезда на ТТК.</p>
+                                <p><span>ТТК</span> – разрешает движение на территории МКАД и ТТК без права въезда на СК.</p>
+                                <p><span>СК</span> – разрешает перемещение по всей территории города (МКАД, ТТК и СК).</p>
+                            </div>
+                            <p>Перемещение по МКАД, ТТК и СК возможно только в дневное время с 7:00 до 23:00 и ночью с 23:00 до 7:00.</p>
+                            <p>В наши услуги входит не только оформление пропусков, но и <span>оформление диагностической карты</span>, которая является свидетельством, подтверждающим, что автомобиль пригоден для передвижения по российским дорогам.</p>
+                            <p>Также, существует ряд ограничений, запрещающих перемещение по городу. По экологическим причинам:</p>
+                            <div class="registration-p">
+                                <p>Въезд и перемещение по МКАД, если экологический класс транспортного средства меньше Евро-2.</p>
+                                <p>Въезд на ТТК и перемещение по центру города, если экологический класс транспортного средства меньше Евро-3</p>
+                            </div>
+                            <p>По весовой категории:</p>
+                            <div class="registration-p">
+                                <p>Перемещение по городу возможно только при наличии специального пропуска.</p>
+                                <p>Транспортным средствам с разрешённой массой свыше 12 тонн запрещён въезд на МКАД в любое время.</p>
+                                <p>Транспортным средствам с разрешенной массой свыше 3.5 тонн запрещен въезд на МКАД с 7:00 до 23:00.</p>
+                                <p>Транспортным средствам с грузоподъёмностью более 1 тонны запрещён въезд на ТТК.</p>
+                            </div>
+                            <p><span>При отсутствии пропуска штраф составляет 5000 рублей за каждый случай фиксации правонарушений.</span></p>
+                        </div>
+                        <div class="registration-block">
+                            <div class="registration-sub-title">Для получения более подробной информации, вы можете связаться с нами:</div>
+                            <div class="registration-text registration-p">
+                                <p><span>По номеру телефона:</span> <a href="tel:84951288689">8(495) 128-86-89</a></p>
+                                <p><span>Написав нам на почту:</span> <a href="#">info@mos-propusk-24.ru</a></p>
+                                <p><span>Написав в Telegram:</span> MOS-PROPUSK-24 - Пропуска МКАД, ТТК, СК</p>
+                                <p><span>Написав в WhatsApp:</span> +7 (967) 555-27-86</p>
+                                <p><span>Адрес офиса:</span> г. Москва, ул. Соловьиная Роща, 8, офис: «МОС-ПРОПУСК-24».</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedddf695601fd15f712eb88445d0406eae9675f2d7f87ef74756212a43c6a043&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-one">
+                        <div class="footer-one-top">
+                            <a href="#" class="footer-one-top-img"><img src="img/footer/logo.png" alt="Логотип"></a>
+                            <div class="footer-one-top-texts">
+                                <div class="footer-one-top-title">mos-propusk-24.ru</div>
+                                <div class="footer-one-top-sub-title">Официальное оформление пропусков на МКАД, ТТК, СК в г.Москва</div>
+                            </div>
+                        </div>
+                        <div class="footer-one-top-text"><span>Адрес:</span> Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”</div>
+                    </div>
+                    <div class="footer-two">
+                        <div class="footer-two-block">
+                            <div class="footer-two-box">
+                                <div class="footer-two-box-title">Меню</div>
+                                <ul class="footer-two-box-list">
+                                    <li><a href="" class="footer-two-box-link">Главная страница</a></li>
+                                    <li><a href="" class="footer-two-box-link">О компании</a></li>
+                                    <li><a href="" class="footer-two-box-link">Отзывы</a></li>
+                                    <li><a href="" class="footer-two-box-link">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-two-box">
+                                <div class="footer-two-box-title">Услуги</div>
+                                <ul class="footer-two-box-list">
+                                    <li><a href="" class="footer-two-box-link">Оформить пропуск</a></li>
+                                    <li><a href="" class="footer-two-box-link">РНИС</a></li>
+                                    <li><a href="" class="footer-two-box-link">Проверка пропука</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-two-content">
+                            <div class="footer-two-content-text">круглосуточный телефон</div>
+                            <a href="tel:" class="footer-two-content-tell">8(495)128-86-89</a>
+                            <div class="footer-two-content-email">info@mos-propusk-24.ru</div>
+                            <div class="footer-two-content-links">
+                                <a href="#" class="footer-two-content-link"><img src="img/footer/img-one.png" alt="вк"></a>
+                                <a href="#" class="footer-two-content-link"><img src="img/footer/img-two.png" alt="вк"></a>
+                                <a href="#" class="footer-two-content-link"><img src="img/footer/img-three.png" alt="ютуб"></a>
+                            </div>
+                            <div class="footer-none footer-one-top-text"><span>Адрес:</span> Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <a href="#" class="footer-end-link">Политика конфиденциальности</a>
+                    <div class="footer-end-title">(с) 2013-2022. Все права защищены</div>
+                    <a href="#" class="footer-end-link">Политика обработки персональных данных</a>
+                    <div class="footer-end-title">(с) 2013-2022. Все права защищены</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
