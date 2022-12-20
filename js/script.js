@@ -38,9 +38,25 @@ const swiperThree = new Swiper('.clients-sliders', {
 	// 	delay: 3000,
 	//   },
 });
+
+let body = document.body;
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
+	body.classList.toggle('overflow');
 })
+
+window.onscroll = function(){
+	var html = document.documentElement, body = document.body;
+	var main = document.querySelector('.main');
+	var BlkStyle = document.querySelector('.header');
+	if(html.scrollTop>50||body.scrollTop>50) {
+		BlkStyle.classList.add('header-fix');
+		main.classList.add('main-p');
+	} else {
+		BlkStyle.classList.remove('header-fix');
+		main.classList.remove('main-p');
+	}
+	 }

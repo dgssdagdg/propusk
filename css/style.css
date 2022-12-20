@@ -494,6 +494,10 @@ body {
   margin-bottom: 40px;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 @media (min-width: 993px) {
   .header-link {
     -webkit-transition: all 0.3s ease 0s;
@@ -515,6 +519,12 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .header-fix {
+    position: fixed;
+  }
+  .main-p {
+    padding-top: 76px;
+  }
   .menu .header-buttons {
     display: none !important;
   }
