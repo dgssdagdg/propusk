@@ -1,5 +1,6 @@
 const swiper = new Swiper('.secrives-sliders', {
 	loop: true,
+	slidesPerView: 'auto',
 	pagination: {
 	  el: '.secrives-pagination',
 	},
@@ -11,6 +12,7 @@ const swiperTwo = new Swiper('.price-slider', {
 	  el: '.price-pagination',
 	},
 	spaceBetween: 30,
+	slidesPerView: 'auto'
 });
 const swiperThree = new Swiper('.clients-sliders', {
 	loop: true,
