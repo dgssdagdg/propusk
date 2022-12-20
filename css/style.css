@@ -551,11 +551,11 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   .menu .header-list li:hover .header-sub-list {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    position: relative;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transition: all 0.3s ease 0s !important;
+    transition: all 0.3s ease 0s !important;
+    position: relative !important;
   }
   .menu .header-sub-list {
     background-color: transparent;
@@ -566,7 +566,7 @@ body {
     color: #fff;
   }
   .menu .header-sub-list li {
-    border: none;
+    border: none !important;
     height: 22px;
     padding-bottom: 0;
     margin-left: 24px;
