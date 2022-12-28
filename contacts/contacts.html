@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper contacts-wrapper">
+        <header class="header">
+            <div class="header-top-color">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="#" class="header-logo">
+                            <img src="../img/logo.png" alt="Логотип">
+                            <div class="header-logo-texts">
+                                <div class="header-logo-title">mos-propusk-24.ru</div>
+                                <div class="header-logo-text">Официальное оформление пропусков на МКАД, ТТК, СК в г.Москва</div>
+                            </div>
+                        </a>
+                        <div class="header-top-navigation">
+                            <div class="header-buttons">
+                                <a href="#" class="header-buttons-btn">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_81_2462)">
+                                        <path d="M20.5989 2.87804C20.3556 2.58705 19.9905 2.42676 19.5707 2.42676C19.3442 2.42676 19.1042 2.47296 18.8575 2.56402L1.98304 8.79314C1.08582 9.12442 0.96506 9.62307 0.972924 9.89082C0.980749 10.1572 1.12911 10.6448 2.03221 10.9262L5.61085 12.2039L7.4969 16.4102C7.68649 16.9919 8.08264 17.4 8.58826 17.5324C8.70482 17.563 8.82383 17.578 8.94369 17.578C9.35433 17.578 9.77477 17.4018 10.1379 17.0695L11.7004 15.6392L15.5131 18.196C15.8564 18.4432 16.23 18.5737 16.5943 18.5737C17.3338 18.5737 17.9235 18.0463 18.0968 17.2301L20.8566 4.22559C20.97 3.69113 20.8785 3.21258 20.5989 2.87804ZM6.79686 12.0065L11.6667 9.46218L8.27273 12.4953C8.15189 12.6033 8.08458 12.7555 8.08439 12.914C8.08416 12.9198 8.08342 12.9255 8.08338 12.9314L8.07166 14.8495L6.79686 12.0065ZM9.33825 16.2402C9.30224 16.2731 9.26615 16.3021 9.23049 16.3273L9.24478 13.9924L10.716 14.979L9.33825 16.2402ZM19.7129 3.99517L16.9531 16.9997C16.9253 17.1308 16.8346 17.4358 16.5943 17.4358C16.482 17.4358 16.3428 17.3795 16.2023 17.2773C16.1962 17.2729 16.1901 17.2686 16.1839 17.2645L11.9807 14.4458C11.9801 14.4454 11.9795 14.445 11.979 14.4446L9.60254 12.851L15.8802 7.24062C16.0971 7.04677 16.132 6.72592 15.9616 6.49205C15.7913 6.25818 15.4689 6.18445 15.2095 6.31997L6.00081 11.1313L2.42209 9.85357C2.41949 9.85262 2.41688 9.85171 2.41423 9.8508L19.2713 3.62809C19.4133 3.57563 19.5125 3.56464 19.5707 3.56464C19.5995 3.56464 19.6692 3.56775 19.6932 3.59657C19.7241 3.63348 19.763 3.75898 19.7129 3.99517Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_81_2462">
+                                        <rect width="19.9314" height="19.4191" fill="white" transform="translate(0.97258 0.790527)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header-buttons-btn">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_81_2454)">
+                                        <path d="M15.4895 3.29923C13.8043 1.66354 11.5626 0.762164 9.17675 0.76123C6.79623 0.76123 4.55093 1.66181 2.85471 3.29709C1.15548 4.93517 0.218819 7.11208 0.216629 9.41887V9.42153V9.42313C0.216903 10.8193 0.5934 12.2278 1.30807 13.5135L0.241127 18.2384L5.14654 17.1513C6.38894 17.7613 7.77518 18.0829 9.17332 18.0834H9.17688C11.557 18.0834 13.8023 17.1827 15.4988 15.5473C17.1995 13.9079 18.1366 11.7338 18.1377 9.42553C18.1384 7.13355 17.198 4.95784 15.4895 3.29923ZM9.17675 16.7194H9.1736C7.9182 16.7188 6.67429 16.4118 5.57655 15.8311L5.34457 15.7084L2.08269 16.4312L2.79121 13.294L2.65462 13.0645C1.97553 11.9235 1.61669 10.664 1.61669 9.42167C1.61929 5.40053 5.01037 2.1253 9.17647 2.1253C11.1891 2.1261 13.0802 2.88627 14.5014 4.26554C15.944 5.66614 16.7382 7.4985 16.7375 9.42513C16.7358 13.4472 13.3441 16.7194 9.17675 16.7194Z" fill="white"/>
+                                        <path d="M6.73861 5.60352H6.34583C6.2091 5.60352 5.98712 5.65338 5.79935 5.85246C5.61144 6.05167 5.08194 6.53316 5.08194 7.51241C5.08194 8.49166 5.81646 9.43784 5.91883 9.57078C6.02134 9.70359 7.33668 11.7773 9.41994 12.5751C11.1513 13.238 11.5037 13.1062 11.8794 13.073C12.2552 13.0399 13.0921 12.5916 13.2629 12.1269C13.4337 11.6622 13.4337 11.2638 13.3825 11.1806C13.3312 11.0977 13.1945 11.0479 12.9896 10.9485C12.7846 10.8488 11.7801 10.3592 11.5922 10.2927C11.4042 10.2264 11.2677 10.1932 11.1309 10.3926C10.9942 10.5915 10.5917 11.0518 10.4721 11.1846C10.3526 11.3175 10.233 11.3342 10.028 11.2346C9.82299 11.1347 9.16962 10.9209 8.38666 10.243C7.77723 9.71532 7.35434 9.04249 7.23472 8.84328C7.11524 8.6442 7.22199 8.53646 7.32477 8.43713C7.41688 8.34805 7.54128 8.22618 7.64379 8.11004C7.74616 7.99377 7.77531 7.91083 7.84374 7.77803C7.91203 7.64522 7.87782 7.52895 7.82663 7.42947C7.77531 7.32987 7.38198 6.34569 7.19969 5.95207H7.19982C7.04627 5.62058 6.88464 5.60938 6.73861 5.60352Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_81_2454">
+                                        <rect width="17.9383" height="17.4771" fill="white" transform="translate(0.216629 0.76123)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </a>
+                                <button type="button" class="header-buttons-btn">Перезвоните мне</button>
+                            </div>
+                            <div class="header-tells">
+                                <div class="header-tells-title">Круглосуточный телефон</div>
+                                <a href="tel:84951288689" class="header-tells-tell">8(495)128-86-89</a>
+                                <div class="header-tells-text">info@mos-propusk-24.ru</div>
+                            </div>
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-end-color">
+                <div class="container">
+                    <div class="header-end">
+                        <nav class="header-nav">
+                            <ul class="header-list">
+                                <li><a href="https://dgssdagdg.github.io/propusk/about/about.html" class="header-link">О нас</a></li>
+                                <li>
+                                    <a href="#" class="header-link">Оформить пропуск</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="https://dgssdagdg.github.io/propusk/mkad/mkad.html" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/foreign/foreign.html" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/diagnostic/diagnostic.html" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/connection/connection.html" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/refurbishment/refurbishment.html" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/rnis/rnis.html" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="https://dgssdagdg.github.io/propusk/insurance/insurance.html" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-link">РНИС</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-link">Услуги</a>
+                                    <span class="header-arrow">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                            <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    <ul class="header-sub-list">
+                                        <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                                        <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                                        <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                                        <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="header-link">Проверка пропуска</a></li>
+                                <li><a href="#" class="header-link">Отзывы</a></li>
+                                <li><a href="#" class="header-link">Информация</a></li>
+                                <li><a href="#" class="header-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-come">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_95_2595)">
+                                <path d="M7.5 0C5.31917 0 3.54492 1.77425 3.54492 3.95508C3.54492 6.13591 5.31917 7.91016 7.5 7.91016C9.68083 7.91016 11.4551 6.13591 11.4551 3.95508C11.4551 1.77425 9.68083 0 7.5 0Z" fill="#2C3036"/>
+                                <path d="M12.4209 10.494C11.3381 9.39454 9.90261 8.78906 8.37891 8.78906H6.62109C5.09742 8.78906 3.66193 9.39454 2.57912 10.494C1.50161 11.5881 0.908203 13.0322 0.908203 14.5605C0.908203 14.8032 1.10496 15 1.34766 15H13.6523C13.895 15 14.0918 14.8032 14.0918 14.5605C14.0918 13.0322 13.4984 11.5881 12.4209 10.494Z" fill="#2C3036"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_95_2595">
+                                <rect width="15" height="15" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            Войти
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li><a href="#" class="header-link">О нас</a></li>
+                    <li>
+                        <a href="#" class="header-link">Оформить пропуск</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="header-link">РНИС</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="header-link">Услуги</a>
+                        <span class="header-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.565685" y1="0.934315" x2="6.56569" y2="6.93431" stroke="#2C3036" stroke-width="1.6"/>
+                                <line y1="-0.8" x2="8.48528" y2="-0.8" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12 1.5)" stroke="#2C3036" stroke-width="1.6"/>
+                                </svg>
+                                
+                        </span>
+                        <ul class="header-sub-list">
+                            <li><a href="#" class="header-sub-link">Пропуск на МКАД</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на ТТК</a></li>
+                            <li><a href="#" class="header-sub-link">Временный пропуск</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на газель</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на спецтехнику</a></li>
+                            <li><a href="#" class="header-sub-link">Иностранным авто</a></li>
+                            <li><a href="#" class="header-sub-link">Пропуск на эвакуатор</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="header-link">Проверка пропуска</a></li>
+                    <li><a href="#" class="header-link">Отзывы</a></li>
+                    <li><a href="#" class="header-link">Информация</a></li>
+                    <li><a href="#" class="header-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="menu-come">Войти в личный кабинет</button>
+            <div class="header-tells">
+                <div class="header-tells-title">Круглосуточный телефон</div>
+                <a href="tel:84951288689" class="header-tells-tell">8(495)128-86-89</a>
+                <div class="header-tells-text">info@mos-propusk-24.ru</div>
+            </div>
+            <div class="header-buttons">
+                <button type="button" class="header-buttons-btn">Перезвоните мне</button>
+                <a href="#" class="header-buttons-btn">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_81_2462)">
+                        <path d="M20.5989 2.87804C20.3556 2.58705 19.9905 2.42676 19.5707 2.42676C19.3442 2.42676 19.1042 2.47296 18.8575 2.56402L1.98304 8.79314C1.08582 9.12442 0.96506 9.62307 0.972924 9.89082C0.980749 10.1572 1.12911 10.6448 2.03221 10.9262L5.61085 12.2039L7.4969 16.4102C7.68649 16.9919 8.08264 17.4 8.58826 17.5324C8.70482 17.563 8.82383 17.578 8.94369 17.578C9.35433 17.578 9.77477 17.4018 10.1379 17.0695L11.7004 15.6392L15.5131 18.196C15.8564 18.4432 16.23 18.5737 16.5943 18.5737C17.3338 18.5737 17.9235 18.0463 18.0968 17.2301L20.8566 4.22559C20.97 3.69113 20.8785 3.21258 20.5989 2.87804ZM6.79686 12.0065L11.6667 9.46218L8.27273 12.4953C8.15189 12.6033 8.08458 12.7555 8.08439 12.914C8.08416 12.9198 8.08342 12.9255 8.08338 12.9314L8.07166 14.8495L6.79686 12.0065ZM9.33825 16.2402C9.30224 16.2731 9.26615 16.3021 9.23049 16.3273L9.24478 13.9924L10.716 14.979L9.33825 16.2402ZM19.7129 3.99517L16.9531 16.9997C16.9253 17.1308 16.8346 17.4358 16.5943 17.4358C16.482 17.4358 16.3428 17.3795 16.2023 17.2773C16.1962 17.2729 16.1901 17.2686 16.1839 17.2645L11.9807 14.4458C11.9801 14.4454 11.9795 14.445 11.979 14.4446L9.60254 12.851L15.8802 7.24062C16.0971 7.04677 16.132 6.72592 15.9616 6.49205C15.7913 6.25818 15.4689 6.18445 15.2095 6.31997L6.00081 11.1313L2.42209 9.85357C2.41949 9.85262 2.41688 9.85171 2.41423 9.8508L19.2713 3.62809C19.4133 3.57563 19.5125 3.56464 19.5707 3.56464C19.5995 3.56464 19.6692 3.56775 19.6932 3.59657C19.7241 3.63348 19.763 3.75898 19.7129 3.99517Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_81_2462">
+                        <rect width="19.9314" height="19.4191" fill="white" transform="translate(0.97258 0.790527)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="header-buttons-btn">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_81_2454)">
+                        <path d="M15.4895 3.29923C13.8043 1.66354 11.5626 0.762164 9.17675 0.76123C6.79623 0.76123 4.55093 1.66181 2.85471 3.29709C1.15548 4.93517 0.218819 7.11208 0.216629 9.41887V9.42153V9.42313C0.216903 10.8193 0.5934 12.2278 1.30807 13.5135L0.241127 18.2384L5.14654 17.1513C6.38894 17.7613 7.77518 18.0829 9.17332 18.0834H9.17688C11.557 18.0834 13.8023 17.1827 15.4988 15.5473C17.1995 13.9079 18.1366 11.7338 18.1377 9.42553C18.1384 7.13355 17.198 4.95784 15.4895 3.29923ZM9.17675 16.7194H9.1736C7.9182 16.7188 6.67429 16.4118 5.57655 15.8311L5.34457 15.7084L2.08269 16.4312L2.79121 13.294L2.65462 13.0645C1.97553 11.9235 1.61669 10.664 1.61669 9.42167C1.61929 5.40053 5.01037 2.1253 9.17647 2.1253C11.1891 2.1261 13.0802 2.88627 14.5014 4.26554C15.944 5.66614 16.7382 7.4985 16.7375 9.42513C16.7358 13.4472 13.3441 16.7194 9.17675 16.7194Z" fill="white"/>
+                        <path d="M6.73861 5.60352H6.34583C6.2091 5.60352 5.98712 5.65338 5.79935 5.85246C5.61144 6.05167 5.08194 6.53316 5.08194 7.51241C5.08194 8.49166 5.81646 9.43784 5.91883 9.57078C6.02134 9.70359 7.33668 11.7773 9.41994 12.5751C11.1513 13.238 11.5037 13.1062 11.8794 13.073C12.2552 13.0399 13.0921 12.5916 13.2629 12.1269C13.4337 11.6622 13.4337 11.2638 13.3825 11.1806C13.3312 11.0977 13.1945 11.0479 12.9896 10.9485C12.7846 10.8488 11.7801 10.3592 11.5922 10.2927C11.4042 10.2264 11.2677 10.1932 11.1309 10.3926C10.9942 10.5915 10.5917 11.0518 10.4721 11.1846C10.3526 11.3175 10.233 11.3342 10.028 11.2346C9.82299 11.1347 9.16962 10.9209 8.38666 10.243C7.77723 9.71532 7.35434 9.04249 7.23472 8.84328C7.11524 8.6442 7.22199 8.53646 7.32477 8.43713C7.41688 8.34805 7.54128 8.22618 7.64379 8.11004C7.74616 7.99377 7.77531 7.91083 7.84374 7.77803C7.91203 7.64522 7.87782 7.52895 7.82663 7.42947C7.77531 7.32987 7.38198 6.34569 7.19969 5.95207H7.19982C7.04627 5.62058 6.88464 5.60938 6.73861 5.60352Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_81_2454">
+                        <rect width="17.9383" height="17.4771" fill="white" transform="translate(0.216629 0.76123)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+            </div>
+        </div>
+        <main class="main">
+            <div class="page">
+                <div class="container">
+                    <div class="page-row">
+                        <a href="#" class="page-main">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6615 6.04775L7.50054 0L0.338867 6.04775V7.3848L1.4456 7.38294V15H5.83726V10.7132H9.16249V15H13.5542V7.38294L14.6615 7.3848V6.04775Z" fill="#CB2222"/>
+                            </svg>
+                            Главная
+                        </a>
+                        <span><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.896447" y1="10.6464" x2="6.39645" y2="5.14645" stroke="#2C3036"/>
+                            <line y1="-0.5" x2="7.77817" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.25 0)" stroke="#2C3036"/>
+                            </svg>
+                        </span>
+                        <p>Контакты</p>
+                    </div>
+                </div>
+            </div>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts-row">
+                        <h2 class="contacts-title _title">Контакты</h2>
+                        <div class="contacts-text _text">Официальная организация с реальным офисом в Москве! <span>3000 довольных клиентов!</span> РЖД, DHL, ПЭК, Почта России и многие другие! <span>Опыт работы 7 лет!</span> Оплата за наличный расчет, безналичный без НДС и с НДС 20%!</div>
+                        <div class="contacts-body">
+                            <div class="contacts-map">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedddf695601fd15f712eb88445d0406eae9675f2d7f87ef74756212a43c6a043&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+                            </div>
+                            <div class="contacts-content">
+                                <div class="contacts-content-text">Круглосуточный телефон</div>
+                                <a href="#" class="contacts-content-tel _title">8(495) 128-86-89</a>
+                                <div class="contacts-content-list">
+                                    <div class="contacts-content-box">
+                                        <div class="contacts-contetn-box-svg">
+                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_633_5211)">
+                                                <path d="M26.7628 5.36426L18.5742 13.5001L26.7628 21.6359C26.9108 21.3265 27.0006 20.9844 27.0006 20.6192V6.38092C27.0006 6.01563 26.9108 5.67365 26.7628 5.36426Z" fill="#CB2222"/>
+                                                <path d="M24.626 4.00781H2.37213C2.00684 4.00781 1.66486 4.09762 1.35547 4.24564L11.8213 14.6587C12.7467 15.5841 14.2515 15.5841 15.1769 14.6587L25.6427 4.24564C25.3333 4.09762 24.9913 4.00781 24.626 4.00781Z" fill="#CB2222"/>
+                                                <path d="M0.237832 5.36426C0.0898067 5.67365 0 6.01563 0 6.38092V20.6192C0 20.9845 0.0898067 21.3265 0.237832 21.6359L8.42637 13.5001L0.237832 5.36426Z" fill="#CB2222"/>
+                                                <path d="M17.4542 14.6187L16.2954 15.7774C14.7535 17.3193 12.2446 17.3193 10.7027 15.7774L9.54401 14.6187L1.35547 22.7545C1.66486 22.9025 2.00684 22.9923 2.37213 22.9923H24.626C24.9913 22.9923 25.3333 22.9025 25.6427 22.7545L17.4542 14.6187Z" fill="#CB2222"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_633_5211">
+                                                <rect width="27" height="27" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </div>
+                                        
+                                        <div class="contacts-content-box-text">
+                                            info@mos-propusk-24.ru
+                                        </div>
+                                    </div>
+                                    <div class="contacts-content-box">
+                                        <div class="contacts-contetn-box-svg">
+                                            <svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5006 0C4.77311 0 0.113281 4.65983 0.113281 10.3874C0.113281 15.8013 8.73502 25.1219 9.71799 26.1681L10.5006 27L11.2833 26.1681C12.2665 25.1227 20.8881 15.8013 20.8881 10.3874C20.8885 4.65983 16.2287 0 10.5006 0ZM10.5006 14.686C8.13071 14.686 6.2024 12.7577 6.2024 10.3878C6.2024 8.0178 8.13071 6.08957 10.5006 6.08957C12.8711 6.08957 14.7989 8.01788 14.7989 10.3878C14.7989 12.7578 12.8711 14.686 10.5006 14.686Z" fill="#CB2222"/>
+                                            </svg>
+                                        </div>
+                                        <div class="contacts-content-box-text">
+                                            <span>Адрес:</span> Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”
+                                        </div>
+                                    </div>
+                                    <div class="contacts-content-box">
+                                        <div class="contacts-contetn-box-svg">
+                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 1C6.61125 1 1 6.61125 1 13.5C1 20.3888 6.61125 26 13.5 26C20.3888 26 26 20.3888 26 13.5C26 6.61125 20.3888 1 13.5 1ZM13.5 7.25C13.8315 7.25 14.1495 7.3817 14.3839 7.61612C14.6183 7.85054 14.75 8.16848 14.75 8.5V13.5H18.5C18.8315 13.5 19.1495 13.6317 19.3839 13.8661C19.6183 14.1005 19.75 14.4185 19.75 14.75C19.75 15.0815 19.6183 15.3995 19.3839 15.6339C19.1495 15.8683 18.8315 16 18.5 16H13.5C13.1685 16 12.8506 15.8683 12.6162 15.6338C12.3817 15.3994 12.25 15.0815 12.25 14.75V8.5C12.25 8.16848 12.3817 7.85054 12.6161 7.61612C12.8505 7.3817 13.1685 7.25 13.5 7.25Z" fill="#CB2222"/>
+                                            </svg>
+                                        </div>
+                                        
+                                        <div class="contacts-content-box-text">
+                                            <span>Часы работы: </span> Ежедневно 08:00 - 23:00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts-content-link">
+                                    <a href="#">
+                                        <img src="../img/contacts/whatsap.png" alt="Ватцап">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/contacts/telegram.png" alt="Телеграм">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/contacts/vcontact.png" alt="Вк">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/contacts/Utyb.png" alt="Ютуб">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/contacts/dzen.png" alt="Дзен">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="request">
+                <div class="container">
+                    <div class="request-row">
+                        <h2 class="request-title _title"><span>Остались вопросы?</span></h2>
+                        <div class="request-text _text">Заполняйте форму и мы свяжемся с вами в течении <span>30 секунд</span> и ответим на все интересующие вас вопросы!</div>
+                        <div class="request-body">
+                            <div class="request-img">
+                                <img src="../img/girls/img-three.png" alt="Отправить заявку на консультацию">
+                            </div>
+                            <form action="#" class="request-form">
+                                <h3 class="request-form-title">Отправить заявку на <span>консультацию</span></h3>
+                                <div class="request-form-inputs">
+                                    <input placeholder="Ваше имя" type="text" class="request-form-input _input">
+                                    <input placeholder="Номер телефона" type="tel" class="request-form-input _input">
+                                    <input placeholder="E-mail" type="email" class="request-form-input _input">
+                                    <textarea placeholder="Текст сообщения" name="text" id="#"class="request-form-input _input"></textarea>
+                                </div>
+                                <button type="submit" class="request-form-btn _btn-red">Отправить</button>
+                                <div class="request-form-text-end">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-one">
+                        <div class="footer-one-top">
+                            <a href="#" class="footer-one-top-img"><img src="../img/footer/logo.png" alt="Логотип"></a>
+                            <div class="footer-one-top-texts">
+                                <div class="footer-one-top-title">mos-propusk-24.ru</div>
+                                <div class="footer-one-top-sub-title">Официальное оформление пропусков на МКАД, ТТК, СК в г.Москва</div>
+                            </div>
+                        </div>
+                        <div class="footer-one-top-text"><span>Адрес:</span> Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”</div>
+                    </div>
+                    <div class="footer-two">
+                        <div class="footer-two-block">
+                            <div class="footer-two-box">
+                                <div class="footer-two-box-title">Меню</div>
+                                <ul class="footer-two-box-list">
+                                    <li><a href="" class="footer-two-box-link">Главная страница</a></li>
+                                    <li><a href="" class="footer-two-box-link">О компании</a></li>
+                                    <li><a href="" class="footer-two-box-link">Отзывы</a></li>
+                                    <li><a href="" class="footer-two-box-link">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-two-box">
+                                <div class="footer-two-box-title">Услуги</div>
+                                <ul class="footer-two-box-list">
+                                    <li><a href="" class="footer-two-box-link">Оформить пропуск</a></li>
+                                    <li><a href="" class="footer-two-box-link">РНИС</a></li>
+                                    <li><a href="" class="footer-two-box-link">Проверка пропука</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-two-content">
+                            <div class="footer-two-content-text">круглосуточный телефон</div>
+                            <a href="tel:" class="footer-two-content-tell">8(495)128-86-89</a>
+                            <div class="footer-two-content-email">info@mos-propusk-24.ru</div>
+                            <div class="footer-two-content-links">
+                                <a href="#" class="footer-two-content-link"><img src="../img/footer/img-one.png" alt="вк"></a>
+                                <a href="#" class="footer-two-content-link"><img src="../img/footer/img-two.png" alt="вк"></a>
+                                <a href="#" class="footer-two-content-link"><img src="../img/footer/img-three.png" alt="ютуб"></a>
+                            </div>
+                            <div class="footer-none footer-one-top-text"><span>Адрес:</span> Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <a href="#" class="footer-end-link">Политика конфиденциальности</a>
+                    <div class="footer-end-title">(с) 2013-2022. Все права защищены</div>
+                    <a href="#" class="footer-end-link">Политика обработки персональных данных</a>
+                    <div class="footer-end-title">(с) 2013-2022. Все права защищены</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

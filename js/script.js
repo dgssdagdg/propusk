@@ -76,6 +76,26 @@ const swiperfive = new Swiper('.partners-sliders', {
 	speed: 800,
 	spaceBetween: 42,
 });
+const swiperVideo = new Swiper('.video-slide', {
+	loop: true,
+	slidesPerView: 'auto',
+	speed: 800,
+	spaceBetween: 31,
+	navigation: {
+		nextEl: '.video-next',
+		prevEl: '.video-prev',
+	  },
+});
+const swiperReferens= new Swiper('.reference-slide', {
+	loop: true,
+	slidesPerView: 'auto',
+	speed: 800,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.reference-next',
+		prevEl: '.reference-prev',
+	  },
+});
 let body = document.body;
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
@@ -140,6 +160,20 @@ window.addEventListener('click', function(event) {
 		let questionsItem = event.target.closest('.questions-item');
 		questionsItem.classList.toggle('questions-item-active');
 	}
+
+//Код для открытия поп апов
+	if (event.target.closest('.pop-up-open-one')) {
+		let pupUp = document.querySelector('.pop-up-one');
+		pupUp.classList.toggle('pop-up-active');
+	}
+	if (event.target.closest('.pop-up-open-two')) {
+		let pupUp = document.querySelector('.pop-up-two');
+		pupUp.classList.toggle('pop-up-active');
+	}
+	if (event.target.closest('.pop-up-open-three')) {
+		let pupUp = document.querySelector('.pop-up-three');
+		pupUp.classList.toggle('pop-up-active');
+	}
 })
 
 window.onscroll = function(){
@@ -168,7 +202,7 @@ function getTimeRemaining(endtime) {
 	  minutes: minutes,
 	  seconds: seconds
 	};
-  }
+}
    
   function initializeClock(id, endtime) {
 	var clock = document.getElementById(id);
@@ -182,8 +216,13 @@ function getTimeRemaining(endtime) {
    
 	  if (t.total <= 0) {
 		clearInterval(timeinterval);
-		var deadline = new Date(Date.parse(new Date()) + 19 * 13 * 1000);
+		var deadline = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
 		initializeClock('countdown', deadline);
+	  }
+	  if (t.total <= 0) {
+		clearInterval(timeinterval);
+		var deadline = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
+		initializeClock('countdown-two', deadline);
 	  }
    
 	  daysSpan.innerHTML = t.days;
@@ -194,7 +233,10 @@ function getTimeRemaining(endtime) {
    
 	updateClock();
 	var timeinterval = setInterval(updateClock, 1000);
-  }
+}
    
-  var deadline = new Date(Date.parse(new Date()) + 19 * 63 * 1000);
-  initializeClock("countdown", deadline);
+var deadline = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
+initializeClock("countdown", deadline);
+var deadlineTwo = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
+initializeClock("countdown-two", deadlineTwo);
+
