@@ -45,6 +45,9 @@ const swiperFour = new Swiper('.comment-sliders', {
 	loop: true,
 	slidesPerView: '1',
 	speed: 800,
+	pagination: {
+		el: '.comment-pagination',
+	  },
 	breakpoints: {
 		320: {
 		  spaceBetween: 55
@@ -69,12 +72,6 @@ const swiperFour = new Swiper('.comment-sliders', {
 		nextEl: '.comment-button-next',
 		prevEl: '.comment-button-prev',
 	  },
-});
-const swiperfive = new Swiper('.partners-sliders', {
-	loop: true,
-	slidesPerView: 'auto',
-	speed: 800,
-	spaceBetween: 42,
 });
 const swiperVideo = new Swiper('.video-slide', {
 	loop: true,
