@@ -130,17 +130,42 @@ menuBtn.addEventListener('click', function(){
 	body.classList.toggle('overflow');
 })
 window.addEventListener('click', function(event) {
+	if (event.target.closest('.tabl-open')) {
+		console.log('kajfsglkwdas')
+		let tabl = document.querySelector('.tables');
+		let tuman = document.querySelector('.rnis-img-tuman');
+		tabl.classList.toggle('tables-active');
+		tuman.classList.toggle('tables-active');
+	}
+	if (event.target.closest('.list-items-title-open')) {
+		console.log('fdagasg')
+		let ev = event.target;
+		let arrow = ev.closest('.list-items-block');
+		let listMain = ev.closest('.list-items')
+		let list = listMain.querySelector('.list-items-boxs');
+		arrow.classList.toggle('list-items-title-active')
+		list.classList.toggle('list-items-boxs-active');
+	}
+	if (event.target.closest('.list-title')) {
+		let ev = event.target;
+		let arrow = ev.closest('.list-title-open');
+		let listMain = ev.closest('.list');
+		let list = listMain.querySelector('.list-body');
+		list.classList.toggle('list-items-list-active');
+		arrow.classList.toggle('list-items-title-active')
+	}
+
 	let mkadMain = document.querySelector('.mkad-form-selects');
 	let arrow = document.querySelector('.mkad-form-select-arrow');
 	if (event.target.closest('.mkad-form-select')) {
 		mkadMain.classList.toggle('mkad-form-selects-active');
 		arrow.classList.toggle('arrow-active');
 	}
-	let mkadPrev = document.querySelector('.mkad-form-select');
-	let mkadPrevText = mkadPrev.querySelector('.mkad-form-select-text');
-	let mkadPrevPrice = mkadPrev.querySelector('.mkad-form-select-price');
-	if (event.target.closest('.mkad-form-list-link-two')) {
 
+	if (event.target.closest('.mkad-form-list-link-two')) {
+		let mkadPrev = document.querySelector('.mkad-form-select');
+		let mkadPrevText = mkadPrev.querySelector('.mkad-form-select-text');
+		let mkadPrevPrice = mkadPrev.querySelector('.mkad-form-select-price');
 		let mkadNext = document.querySelector('.mkad-form-list-link-two');
 		let mkadNextText = mkadNext.querySelector('.mkad-form-select-text').innerText;
 		let mkadNextPrice = mkadNext.querySelector('.mkad-form-select-price').innerText;
@@ -150,7 +175,9 @@ window.addEventListener('click', function(event) {
 		arrow.classList.remove('arrow-active');
 	}
 	if (event.target.closest('.mkad-form-list-link-one')) {
-
+		let mkadPrev = document.querySelector('.mkad-form-select');
+		let mkadPrevText = mkadPrev.querySelector('.mkad-form-select-text');
+		let mkadPrevPrice = mkadPrev.querySelector('.mkad-form-select-price');
 		let mkadNext = document.querySelector('.mkad-form-list-link-one');
 		let mkadNextText = mkadNext.querySelector('.mkad-form-select-text').innerText;
 		let mkadNextPrice = mkadNext.querySelector('.mkad-form-select-price').innerText;
