@@ -3,6 +3,7 @@ const swiper = new Swiper('.secrives-sliders', {
 	slidesPerView: 'auto',
 	pagination: {
 	  el: '.secrives-pagination',
+	  clickable: true,
 	},
 	spaceBetween: 30,
 });
@@ -10,6 +11,7 @@ const swiperTwo = new Swiper('.price-slider', {
 	loop: true,
 	pagination: {
 	  el: '.price-pagination',
+	  clickable: true,
 	},
 	spaceBetween: 30,
 	slidesPerView: 'auto'
@@ -47,6 +49,7 @@ const swiperFour = new Swiper('.comment-sliders', {
 	speed: 800,
 	pagination: {
 		el: '.comment-pagination',
+		clickable: true,
 	  },
 	breakpoints: {
 		320: {
@@ -81,17 +84,42 @@ const swiperVideo = new Swiper('.video-slide', {
 	navigation: {
 		nextEl: '.video-next',
 		prevEl: '.video-prev',
-	  },
+	},
+	pagination: {
+		el: '.video-pagination',
+		clickable: true,
+	},
+	breakpoints: {
+		320: {
+		  spaceBetween: 65
+		},
+
+		400: {
+			spaceBetween: 30
+		},
+	},
 });
 const swiperReferens= new Swiper('.reference-slide', {
 	loop: true,
 	slidesPerView: 'auto',
 	speed: 800,
-	spaceBetween: 30,
 	navigation: {
 		nextEl: '.reference-next',
 		prevEl: '.reference-prev',
-	  },
+	},
+	  pagination: {
+		el: '.reference-pagination',
+		clickable: true,
+	},
+	  breakpoints: {
+		320: {
+		  spaceBetween: 65
+		},
+
+		400: {
+			spaceBetween: 30
+		},
+	},
 });
 let body = document.body;
 let menuBtn = document.querySelector('.menu-btn');
