@@ -155,38 +155,6 @@ window.addEventListener('click', function(event) {
 		arrow.classList.toggle('list-items-title-active')
 	}
 
-	let mkadMain = document.querySelector('.mkad-form-selects');
-	let arrow = document.querySelector('.mkad-form-select-arrow');
-	if (event.target.closest('.mkad-form-select')) {
-		mkadMain.classList.toggle('mkad-form-selects-active');
-		arrow.classList.toggle('arrow-active');
-	}
-
-	if (event.target.closest('.mkad-form-list-link-two')) {
-		let mkadPrev = document.querySelector('.mkad-form-select');
-		let mkadPrevText = mkadPrev.querySelector('.mkad-form-select-text');
-		let mkadPrevPrice = mkadPrev.querySelector('.mkad-form-select-price');
-		let mkadNext = document.querySelector('.mkad-form-list-link-two');
-		let mkadNextText = mkadNext.querySelector('.mkad-form-select-text').innerText;
-		let mkadNextPrice = mkadNext.querySelector('.mkad-form-select-price').innerText;
-		mkadPrevText.innerText = mkadNextText;
-		mkadPrevPrice.innerText = mkadNextPrice;
-		mkadMain.classList.remove('mkad-form-selects-active');
-		arrow.classList.remove('arrow-active');
-	}
-	if (event.target.closest('.mkad-form-list-link-one')) {
-		let mkadPrev = document.querySelector('.mkad-form-select');
-		let mkadPrevText = mkadPrev.querySelector('.mkad-form-select-text');
-		let mkadPrevPrice = mkadPrev.querySelector('.mkad-form-select-price');
-		let mkadNext = document.querySelector('.mkad-form-list-link-one');
-		let mkadNextText = mkadNext.querySelector('.mkad-form-select-text').innerText;
-		let mkadNextPrice = mkadNext.querySelector('.mkad-form-select-price').innerText;
-		mkadPrevText.innerText = mkadNextText;
-		mkadPrevPrice.innerText = mkadNextPrice;
-		mkadMain.classList.remove('mkad-form-selects-active');
-		arrow.classList.remove('arrow-active');
-	}
-
 	let documentItemOne = document.querySelector('.document-btn-one');
 	let documentBlockOne= document.querySelector('.document-block-one');
 	let documentItemTwo = document.querySelector('.document-btn-two');
