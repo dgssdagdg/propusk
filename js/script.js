@@ -121,6 +121,51 @@ const swiperReferens= new Swiper('.reference-slide', {
 		},
 	},
 });
+const swiperStamps= new Swiper('.stamps-sliders', {
+	loop: true,
+	slidesPerView: 'auto',
+	speed: 800,
+	  breakpoints: {
+		320: {
+			spaceBetween: 40
+		},
+		350: {
+			spaceBetween: 15
+		},
+		390: {
+			spaceBetween: 35
+		  },
+		520: {
+		  spaceBetween: 45
+		},
+		900: {
+			spaceBetween: 35
+		},
+		1200: {
+			spaceBetween: 30
+		},
+	},
+});
+const swiperAuto= new Swiper('.auto-sliders', {
+	loop: true,
+	slidesPerView: 'auto',
+	speed: 800,
+	spaceBetween: 40,
+	navigation: {
+		nextEl: '.auto-button-next',
+		prevEl: '.auto-button-prev',
+	},
+});
+const swiperVip= new Swiper('.why-sliders', {
+	loop: true,
+	slidesPerView: 'auto',
+	speed: 800,
+	spaceBetween: 40,
+	pagination: {
+		el: '.why-pagination',
+		clickable: true,
+	},
+});
 let body = document.body;
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
@@ -129,7 +174,24 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 	body.classList.toggle('overflow');
 })
-window.addEventListener('click', function(event) {
+document.addEventListener('click', function(event) {
+
+
+	//Вот функция для селекта (input)-------------------------
+    if (event.target.closest('.online-select')) {
+		let online = event.target.closest('.online-select');
+        online.classList.toggle('_online-select-open');
+    }
+
+    if (event.target.closest('.online-block-item')) {
+        var popClick = event.target.closest('.online-block-item').textContent;
+		fz = event.target.closest('.online-select');
+		let inpustsast = fz.querySelector('.online-select-input')
+        inpustsast.value = popClick;
+    }
+
+
+
 	if (event.target.closest('.tabl-open')) {
 		console.log('kajfsglkwdas')
 		let tabl = document.querySelector('.tables');
