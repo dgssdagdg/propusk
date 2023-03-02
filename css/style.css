@@ -72,19 +72,37 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Golos Text VF";
-  src: url("../font/golos-text_regular.woff2") format("woff2"), url("../font/golos-text_regular.woff") format("woff");
+  src: url("../font/GolosText-Regular.ttf") format("truetype"), url("../font/golos-text_regular.woff2") format("woff2"), url("../font/golos-text_regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Golos Text VF";
-  src: url("../font/golos-text_medium.woff2") format("woff2"), url("../font/golos-text_medium.woff") format("woff");
+  src: url("../font/GolosText-Medium.ttf") format("truetype"), url("../font/golos-text_medium.woff2") format("woff2"), url("../font/golos-text_medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Golos Text VF";
-  src: url("../font/golos-text_bold.woff2") format("woff2"), url("../font/golos-text_bold.woff") format("woff");
+  src: url("../font/GolosText-Bold.ttf") format("truetype"), url("../font/golos-text_bold.woff2") format("woff2"), url("../font/golos-text_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos Text VF";
+  src: url("../font/GolosText-Regular.ttf") format("truetype"), url("../font/golos-text_regular.woff2") format("woff2"), url("../font/golos-text_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos Text VF";
+  src: url("../font/GolosText-Medium.ttf") format("truetype"), url("../font/golos-text_medium.woff2") format("woff2"), url("../font/golos-text_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos Text VF";
+  src: url("../font/GolosText-Bold.ttf") format("truetype"), url("../font/golos-text_bold.woff2") format("woff2"), url("../font/golos-text_bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -7731,4 +7749,112 @@ tr th:nth-of-type(4) {
 }
 .mkad-form-select p {
   margin-right: 4px;
+}
+
+.banner-vip .banner-img-girl {
+  left: -37px;
+}
+.banner-vip .banner-content {
+  margin-left: 235px;
+}
+.banner-vip .banner-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 28px;
+  line-height: 121.4285714286%;
+}
+.banner-vip .banner-title p {
+  margin-left: 10px;
+}
+.banner-vip .banner-title p span {
+  font-family: "Golos Text VF";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  letter-spacing: 0.02em;
+  color: #CB2222;
+}
+.banner-vip .banner-img-fon {
+  width: 100%;
+}
+
+.banner-sub-text {
+  font-family: "Golos Text VF";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.02em;
+  color: #2C3036;
+  margin-bottom: 18px;
+}
+
+.banner-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.banner-box-item {
+  font-family: "Golos Text VF";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121.4285714286%;
+  letter-spacing: 0.02em;
+  color: #5c636f;
+}
+.banner-box-item span {
+  color: #CB2222;
+  font-weight: 700;
+}
+.banner-box-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.banner-block-btn {
+  font-family: "Golos Text VF";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 118.75%;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  height: 39px;
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .banner-vip .banner-content {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .banner-vip .banner-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .banner-vip .banner-boxs {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
