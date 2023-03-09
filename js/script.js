@@ -256,6 +256,11 @@ document.addEventListener('click', function(event) {
 		let pupUp = document.querySelector('.pop-up-three');
 		pupUp.classList.toggle('pop-up-active');
 	}
+
+	if(event.target.closest('.flip-card-btn')) {
+		let FlipItem = event.target.closest('.flip-card');
+		FlipItem.classList.toggle('flip-card-hover');
+	}
 })
 
 window.onscroll = function(){
