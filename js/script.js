@@ -1,3 +1,20 @@
+const progresOne = document.querySelector('.range-one');
+progresOne.addEventListener('input', function() {
+  var progressTotal = document.querySelector('.total-range-one');
+  const value = this.value;
+  progressTotal.innerText = value * 15;
+  this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+const progresTwo = document.querySelector('.range-two');
+progresTwo.addEventListener('input', function() {
+  var progressTotal = document.querySelector('.total-range-two');
+  const value = this.value;
+  progressTotal.innerText = value;
+  this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+
+
+
 const swiper = new Swiper('.secrives-sliders', {
 	loop: true,
 	slidesPerView: 'auto',
@@ -166,6 +183,7 @@ const swiperVip= new Swiper('.why-sliders', {
 		clickable: true,
 	},
 });
+
 let body = document.body;
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
@@ -261,6 +279,34 @@ document.addEventListener('click', function(event) {
 		let FlipItem = event.target.closest('.flip-card');
 		FlipItem.classList.toggle('flip-card-hover');
 	}
+	let viewTwo = document.querySelector('.fuel-forms-two');
+    let viewOne = document.querySelector('.fuel-forms-one');
+    let viewOneBtn = document.querySelector('.fuel-forms-viwe-one');
+    let viewTwoBtn = document.querySelector('.fuel-forms-viwe-two');
+    if (event.target.closest('.fuel-forms-viwe-two') && viewOne.closest('.fuel-forms-active')) {
+        viewTwo.classList.add('fuel-forms-active');
+        viewOne.classList.remove('fuel-forms-active');
+        viewTwoBtn.classList.add('fuel-forms-viwe-active');
+        viewOneBtn.classList.remove('fuel-forms-viwe-active');
+    }
+    if (event.target.closest('.fuel-forms-viwe-one') && viewTwo.closest('.fuel-forms-active')) {
+        viewOne.classList.add('fuel-forms-active');
+        viewTwo.classList.remove('fuel-forms-active');
+        viewTwoBtn.classList.remove('fuel-forms-viwe-active');
+        viewOneBtn.classList.add('fuel-forms-viwe-active');
+    }
+
+	if (event.target.closest('.fuel-items')) {
+		let fuelItems = event.target.closest('.fuel-items');
+		let fuelItemGlobal = fuelItems.querySelector('.fuel-item-active');
+
+		if(event.target.closest('.fuel-item') && !event.target.closest('.fuel-item-active'))  {
+			let fuelNumber = event.target.closest('.fuel-number');
+			let fuelItem = fuelNumber.closest('.fuel-item');
+			fuelItem.classList.add('fuel-item-active');
+			fuelItemGlobal.classList.remove('fuel-item-active');
+		}
+	}
 })
 
 window.onscroll = function(){
@@ -291,7 +337,7 @@ function getTimeRemaining(endtime) {
 	};
 }
    
-  function initializeClock(id, endtime) {
+function initializeClock(id, endtime) {
 	var clock = document.getElementById(id);
 	var daysSpan = clock.querySelector(".days");
 	var hoursSpan = clock.querySelector(".hours");
@@ -326,4 +372,3 @@ var deadline = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
 initializeClock("countdown", deadline);
 var deadlineTwo = new Date(Date.parse(new Date()) + 90 * 20 * 29 * 63 * 1000);
 initializeClock("countdown-two", deadlineTwo);
-
