@@ -1,5 +1,5 @@
 
-var progressTotalOne = document.querySelector('.total-range-one');
+const progressTotalOne = document.querySelector('.total-range-one');
 const progresOne = document.querySelector('.range-one');
 progresOne.addEventListener('input', function() {
   const value = this.value;
@@ -8,7 +8,7 @@ progresOne.addEventListener('input', function() {
 })
 
 
-var progressTotalTwo = document.querySelector('.total-range-two');
+const progressTotalTwo = document.querySelector('.total-range-two');
 const progresTwo = document.querySelector('.range-two');
 progresTwo.addEventListener('input', function() {
   const value = this.value;
@@ -17,7 +17,7 @@ progresTwo.addEventListener('input', function() {
 })
 
 
-var progressTotalThree = document.querySelector('.total-range-three');
+const progressTotalThree = document.querySelector('.total-range-three');
 const progresThree = document.querySelector('.range-three');
 progresThree.addEventListener('input', function() {
   const value = this.value;
@@ -26,7 +26,7 @@ progresThree.addEventListener('input', function() {
 })
 
 
-var progressTotalFour = document.querySelector('.total-range-four');
+const progressTotalFour = document.querySelector('.total-range-four');
 const progresFour = document.querySelector('.range-four');
 progresFour.addEventListener('input', function() {
   const value = this.value;
