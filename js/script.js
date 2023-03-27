@@ -1,31 +1,62 @@
+
+var progressTotalOne = document.querySelector('.total-range-one');
 const progresOne = document.querySelector('.range-one');
 progresOne.addEventListener('input', function() {
-  var progressTotal = document.querySelector('.total-range-one');
   const value = this.value;
-  progressTotal.innerText = value * 15;
+  progressTotalOne.value = value * 240;
   this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
 })
+
+
+var progressTotalTwo = document.querySelector('.total-range-two');
 const progresTwo = document.querySelector('.range-two');
 progresTwo.addEventListener('input', function() {
-  var progressTotal = document.querySelector('.total-range-two');
   const value = this.value;
-  progressTotal.innerText = value;
+  progressTotalTwo.value = value;
   this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
 })
+
+
+var progressTotalThree = document.querySelector('.total-range-three');
 const progresThree = document.querySelector('.range-three');
 progresThree.addEventListener('input', function() {
-  var progressTotal = document.querySelector('.total-range-three');
   const value = this.value;
-  progressTotal.innerText = value * 15;
+  progressTotalThree.value = value * 240;
   this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
 })
+
+
+var progressTotalFour = document.querySelector('.total-range-four');
 const progresFour = document.querySelector('.range-four');
 progresFour.addEventListener('input', function() {
-  var progressTotal = document.querySelector('.total-range-four');
   const value = this.value;
-  progressTotal.innerText = value;
+  progressTotalFour.value = value;
   this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
 })
+
+
+progressTotalThree.addEventListener('input', function(e) {
+	progresThree.value = e.target.value / 240;
+	let value = progresThree.value;
+	progresThree.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+progressTotalOne.addEventListener('input', function(e) {
+	progresOne.value = e.target.value / 240;
+	let value = progresOne.value;
+	progresOne.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+progressTotalTwo.addEventListener('input', function(e) {
+	progresTwo.value = e.target.value / 1;
+	let value = progresTwo.value;
+	progresTwo.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+progressTotalFour.addEventListener('input', function(e) {
+	progresFour.value = e.target.value / 1;
+	let value = progresFour.value;
+	progresFour.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+
+
 
 
 

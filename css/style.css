@@ -8214,6 +8214,7 @@ tr th:nth-of-type(4) {
           justify-content: center;
   border-bottom: 1px solid #CB2222;
   width: 52px;
+  text-align: center;
 }
 
 .fuel-range-points {
