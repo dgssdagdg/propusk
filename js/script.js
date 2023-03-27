@@ -12,6 +12,20 @@ progresTwo.addEventListener('input', function() {
   progressTotal.innerText = value;
   this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
 })
+const progresThree = document.querySelector('.range-three');
+progresThree.addEventListener('input', function() {
+  var progressTotal = document.querySelector('.total-range-three');
+  const value = this.value;
+  progressTotal.innerText = value * 15;
+  this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
+const progresFour = document.querySelector('.range-four');
+progresFour.addEventListener('input', function() {
+  var progressTotal = document.querySelector('.total-range-four');
+  const value = this.value;
+  progressTotal.innerText = value;
+  this.style.background = `linear-gradient(to right, #CB2222 0%, #CB2222 ${value}%, #E8EBF2 ${value}%)`
+})
 
 
 
