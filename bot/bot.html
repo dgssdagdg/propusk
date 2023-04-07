@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bot">
+        <div class="bot-row">
+            <div class="bot-top">
+                <div class="bot-logo _anim-items _hide _anim-no-hide">
+                    <img src="../img//bot/bot-logo.png" alt="">
+                </div>
+                <div class="bot-text _anim-items _hide _anim-no-hide">С любовью IT подразделение  компании МОС-ПРОПУСК-24</div>
+            </div>
+            <div class="bot-title _anim-items _hide _anim-no-hide">Скликиваешь Я. Директ? Угощайся!
+                <div class="bot-text-img _anim-items _hide _anim-no-hide"><img src="../img/bot/bot-stik.png" alt=""></div>
+            </div>
+            <div class="bot-img _anim-items _hide _anim-no-hide">
+                <img src="../img/bot/bot-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const animItems = document.querySelectorAll('._anim-items');
+        if (animItems.length > 0) {
+            window.addEventListener('scroll', animOnScroll);
+            function animOnScroll() {
+                for (let index = 0; index < animItems.length; index++) {
+                    const animItem = animItems[index];
+                    const animItemHeight = animItem.offsetHeight;
+                    const animItemOffset = offset(animItem).top;
+                    const animStart = 4;
+
+                    let animItemPoint = window.innerHeight - animItemHeight / animStart;
+                    if (animItemHeight > window.innerHeight) {
+                        animItemPoint = window.innerHeight - window.innerHeight / animStart
+                    }
+
+                    if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
+                        animItem.classList.add('_active');
+                    } else {
+                        if (!animItem.classList.contains('_anim-no-hide')) {
+                            animItem.classList.remove('_active');
+                        }
+                    }
+                }
+            }
+            function offset(el) {
+                const rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.scrollY || document.documentElement.scrollTop;
+                return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+            }
+            setTimeout(() => {
+                animOnScroll();
+            }, 300);
+        }
+    </script>
+</body>
+</html>
